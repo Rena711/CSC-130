@@ -1,0 +1,337 @@
+body {
+    margin: 0;
+    font-family: system-ui;
+    background: linear-gradient(#baabab, #e3b1b1 );
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #baabab;
+    position:fixed;
+    top: 0;
+    width: 100%;
+}
+
+  /* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+  
+  /* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: #cd9898;
+}
+
+.topnav a:focus {
+    background-color:	#cd9898;
+    color: white;
+}
+  
+  /* Add a color to the active/current link */
+.topnav a.active {
+    background-color:	#cd9898;
+    color: white;
+}
+
+.home {
+    background-image: url("bgImage.jpg");
+    background-size: cover;
+    background-blend-mode:multiply;
+    padding-bottom: 300px;
+    padding-top: 200px;
+}
+
+.home h1 {
+    text-align: center;
+    font-family: system-ui;
+    color: white;
+    font-size: 100px;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+#about {
+    margin: 12px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    background: linear-gradient(#baabab, #e7c0c0 );
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    color: white;
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    color: rgba(87, 35, 52, 0.664) ;
+ }
+  /* twitter*/
+  .fa-twitter {
+    color: rgba(87, 35, 52, 0.664);
+  }
+  /*instagram */
+  .fa-instagram {
+    color: rgba(87, 35, 52, 0.664);
+  }
+
+  .socialMedia{
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  
+  .firstImage{
+    display: flex;
+    justify-content: left;;
+    padding:20px;
+    padding-top: 70px;
+    border-left:15px dashed black;
+    border-right:15px dashed black;
+    background-image: url("abstract1.jpg");
+    background-size: cover ;
+  }
+
+  @keyframes labels {
+    from {background-color: white;}
+    to {background-color:  #dfadad }
+  }
+
+  .firstImage p {
+    font-family: cursive;
+    padding-left: 150px;
+    padding-top: 150px;
+    font-size: 30px;
+    width:20%;
+    height: 10%;
+    padding: 20px;
+    background-color:  #e3b1b1 ;
+    animation-name: labels;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+  }
+
+  .secondImage{
+    display: flex;
+    justify-content: right;
+    padding:20px;
+    padding-top: 70px;
+    border-left:15px dashed black;
+    border-right:15px dashed black;
+    background-image: url("abstract2.jpg");
+    background-size: cover ;
+  }
+
+  .secondImage p{
+    font-family: cursive;
+    padding-right: 30px;
+    padding-top: 150px;
+    font-size: 30px;
+    text-align: right;
+    width:20%;
+    height: 10%;
+    padding: 20px;
+    background-color:  #e3b1b1 ;
+    animation-name: labels;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: 5;
+  }
+
+  .thirdImage{
+    display: flex;
+    justify-content: left;;
+    padding:20px;
+    padding-top: 70px;
+    border-left:15px dashed black;
+    border-right:15px dashed black;
+    background-image: url("abstract3.jpg");
+    background-size: cover ;
+  }
+
+  .thirdImage p{
+    font-family: cursive;
+    padding-left: 150px;
+    padding-top: 150px;
+    font-size: 30px;
+    width:27%;
+    height: 10%;
+    padding: 20px;
+    background-color:  #e3b1b1 ;
+    animation-name: labels;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-iteration-count: 5;
+  }
+.secondImage img {
+  border:10px solid white;
+}
+
+  
+  
+.gallery {
+  padding: 15px;
+  padding-top: 70px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  float:left;
+  width: 250px;
+  background-color: #ddd;
+  
+  
+}
+
+.gallery:hover {
+  border: 2px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: cursive;
+}
+
+@media screen and (max-width: 400px){
+  .home {
+    background-image: url("bgImage.jpg");
+    background-size:contain;
+    background-blend-mode:multiply;
+    padding-bottom: 300px;
+    padding-top: 200px;
+}
+
+.home h1 {
+    text-align: center;
+    font-family: system-ui;
+    color: white;
+    font-size: 100px;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+#about {
+    margin: 12px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    background: linear-gradient(#baabab, #e7c0c0 );
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+.firstImage{
+  display: flex;
+  justify-content: left;
+  padding:20px;
+  padding-top: 70px;
+  border-left:15px dashed black;
+  border-right:15px dashed black;
+}
+
+
+@keyframes labels {
+  from {background-color: white;}
+  to {background-color:  #dfadad }
+}
+
+.firstImage p {
+  font-family: cursive;
+  padding-left: 150px;
+  padding-top: 150px;
+  font-size: 30px;
+  width:30%;
+  height: 10%;
+  padding: 20px;
+  background-color:  #e3b1b1 ;
+  animation-name: labels;
+  animation-duration: 5s;
+  animation-iteration-count: 5;
+}
+
+.secondImage{
+  display: flex;
+  justify-content: right;
+  padding:20px;
+  padding-top: 70px;
+  border-left:15px dashed black;
+  border-right:15px dashed black;
+}
+
+.secondImage p{
+  font-family: cursive;
+  padding-right: 30px;
+  padding-top: 150px;
+  font-size: 30px;
+  text-align: right;
+  width:30%;
+  height: 10%;
+  padding: 20px;
+  background-color:  #e3b1b1 ;
+  animation-name: labels;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: 5;
+}
+
+.thirdImage{
+  display: flex;
+  justify-content: left;;
+  padding:20px;
+  padding-top: 70px;
+  border-left:15px dashed black;
+  border-right:15px dashed black;
+}
+
+.thirdImage p{
+  font-family: cursive;
+  padding-left: 150px;
+  padding-top: 150px;
+  font-size: 30px;
+  width:30%;
+  height: 10%;
+  padding: 20px;
+  background-color:  #e3b1b1 ;
+  animation-name: labels;
+  animation-duration: 5s;
+  animation-delay: 4s;
+  animation-iteration-count: 5;
+}
+
+
+
+}
