@@ -1,1 +1,1 @@
-Site I made to study for the midterm. It includes notes of things I had to learn.
+Site I made to study for the midterm. It includes topics of things I had to learn.
