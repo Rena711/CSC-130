@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(144, 170, 170);
+    font-family: monospace;
+    padding:30px;
+}
+.basics {
+    background-color: rgb(227, 235, 243);
+    width:fit-content;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-left:30px;
+    
+}
+h1 {
+    font-weight: bolder;
+    font-family: system-ui;
+    border-right: 700px solid rgb(132, 132, 186);
+    border-left: 5px solid rgb(82, 82, 140);
+    
+}
+
+h2 {
+    font-weight: bolder;
+    font-family: system-ui;
+    border-bottom: 5px solid rgb(82, 82, 140);
+}
+
+h3 {
+    border-left: 5px solid rgb(82, 82, 140);
+}
+
+.rest {
+    background-color: rgb(225, 236, 232);
+    width:fit-content;
+}
+table {
+    border: 1px solid blue;
+}
+td {
+    border: 1px solid blue;
+}

@@ -1,0 +1,100 @@
+<html>
+<head>
+	<script src="pracmt2.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="stylemt2.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="basics">
+        <h1> Basics for mt2:</h1>
+        <img src="basic.png" alt="basic">
+        <h1> To Remember:</h1>
+        <p>
+
+            1. alert(blah blah);<br>
+            2. console.log(blah);<br>
+            <br>
+            <h2>JS:</h2>
+            1. Write in html: document.getElementById("testingID").innerHTML = "html";<br>
+            2. document.getElementById("testingID").src = "html.png";<br>
+            3. document.getElementById("ID").value<br>
+            4. document.getElementById("ID").style.backgroundColor = "red";<br>
+            5. CREATING AN OBJECT: let obj = {name: "Serena", age:20}; -> ; after!<br> 
+            6. document.getElementByTagName("p");<br>
+            7. document.getElementByClassName("class")<br>
+            <br>
+            <h2>JQ:</h2>
+            <b>$(selector).action()</b><br>
+            1. $("#id").html("hi!"); - HTML CHANGE<br>
+            2. $("p").hide();<br>
+            3. $(".class").hide();<br>
+            4. image -> $("#idImage").attr("src", "tree.png"); -> change src to ... pic<br>
+            5. $("#id").val();<br>
+            6. $("#id").css("background-color", "red";) - or name with var<br>
+            7. ADVANCED SELECTOR -> $("p.anotherClass")<br>
+            8. IN HTML: <br>
+            let area = $("#idArea")<br>
+            area.html("[h1]Welcome[/h1]")
+            <h3>Events</h3>
+            Actions that respond to user. (click, hover)<br><br>
+            1. $("p").click(function(){  actually called function<br>
+                 action;<br>
+            })<br><br>
+            2. $(document).ready(){<br>
+                 do stuff<br>
+            } - fully load first<br>
+            <h3>JSON</h3>
+            Notation for working with objects in Javascript <br><br>
+            -> name: value;<br>
+            -> item sep by ,<br>
+            -> { } to hold obj<br>
+            -> [ ] to hold arrays<br>
+        </p>
+    </div>
+    <div class="rest">
+        <h2>REST</h2>
+        <p>
+
+            To communicate with servers and get data!<br><br>
+            -> server will transfer data in form of <b>JSON</b> <br><br>
+            <b>TO GET ALL AVAILABLE INFO:<br></b>
+            $.get(fullURL, function(data){<br>
+                console.log(data);<br>
+            });<br><br>
+            <h3>Status Codes</h3><br>
+            -> 100s: Informational<br>
+            -> 200s: Success<br>
+            -> 300s: Redirection<br>
+            -> 400s: Client Error<br>
+            -> 500s: Client Error<br>
+            <br>
+            <br>
+            <b>Rest Methods</b><br>
+            <table>
+                <tr style="background-color: white;">
+                    <td>GET</td>
+                    <td>POST</td>
+                    <td>DELETE</td>
+                    <td>PUT</td>
+                </tr>
+                <tr>
+                    <td>Read a resource (read only)</td>
+                    <td>create a new resource (updates to server)</td>
+                    <td>Delete existing resource</td>
+                    <td>Update values in resource/create new</td>
+                </tr>
+                <tr style="background-color: white;"><td><b>2 OUTCOMES</b></td></tr>
+                <tr>
+                    <td>200 - success<br>404/400 - failure</td>
+                    <td>201 - success<br>400/401 - failure</td>
+                    <td>200 - success, 204 - no content <br> 404 - failure</td>
+                    <td>200, 201, 204 - success <br> failure when response code not returned, depends</td> 
+                </tr>
+                    
+            </table>
+
+        </p>
+    </div>
+
+</body>
+</html>
