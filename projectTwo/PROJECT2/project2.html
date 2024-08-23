@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Weather Today</title>
+        <link href="project2.css" type="text/css" rel="stylesheet">
+        <script src="project2.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    </head>
+    <body>
+        <div class="top">
+            <div class="input">
+                <div class="title">Weather Today</div>
+	            <div class="container">
+		            <div class="item">CITY:<input type="text" id="city" placeholder="ex. Vancouver..."></div>
+                    <div class="checkContainer">
+                        <input type="checkbox" id="foreC" name="show" value="1">
+                        <label for="foreC">Forecasts</label><br>
+                    </div>
+		            <div class="item"><button onclick="find()">Submit</button></div>
+	            </div>
+            </div>
+        </div>
+        <div id="info">
+        <img id="currentImg">
+        <br>
+        <div class="titleTable">Results:</div>
+            <table>
+                <tr><td>CITY:</td><td id="name"></td></tr>
+                <tr><td>COUNTRY:</td><td id="country"></td></tr>
+                <tr><td>TIMEZONE:</td><td id="timezone"></td></tr>
+                <tr><td>SUNRISE:</td><td id="rise"></td></tr>
+                <tr><td>SUNSET:</td><td id="set"></td></tr>
+            </table>
+            <br> 
+            <table>
+                <tr><td>CURRENT CONDITIONS:</td><td id="current"></td></tr>
+                <tr><td>TEMPERATURE (&#8451):</td><td id="temp"></td></tr>
+                <tr><td>HIGH (&#8451):</td><td id="high"></td></tr>
+                <tr><td>LOW (&#8451): </td><td id="low"></td></tr>
+                <tr><td>HUMIDITY (%):</td><td id="humid"></td></tr>
+                <tr><td>VISIBILITY (km): </td><td id="Visibility"></td></tr>
+                <tr><td>WIND SPEED (km/h): </td><td id="wind"></td></tr>
+            </table>
+            
+        </div>
+        
+        <div id="chartd">
+            <h1>Forecasts</h1>
+            <br>
+            <div id="weatherD">
+                <table>
+                    <tr>
+                    <th id="zero"></th>
+                    <th id="one"></th>
+                    <th id="two"></th>
+                    <th id="three"></th>
+                    </tr>
+                    <tr>
+                        <td><img id="zImg"></td>
+                        <td><img id="oImg"></td>
+                        <td><img id="twImg"></td>
+                        <td><img id="thrImg"></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <br>
+            <div class="chartH">
+                A Line Graph Showing the High and Low Temperatures of the Following Week (&#8451)
+            </div>
+            <canvas id="myChart" style="width:70%;max-width:450px"></canvas>
+        </div>
+
+        
+
+        
+    </body>
+
+
+</html>

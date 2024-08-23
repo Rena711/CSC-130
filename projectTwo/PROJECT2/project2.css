@@ -1,0 +1,231 @@
+body {
+   background-image: url("weather.jpg");
+    background-size: cover;
+    font-family: system-ui;
+    
+}
+
+.input {
+    
+    background: rgba(240, 250, 240, 0.4);
+    padding: 10px;
+    color:white;
+    font-weight: bolder;
+    font-size: medium;
+    
+}
+.input [type=text] {
+    box-sizing: border-box;
+    padding: 6px 50px;
+    margin: 5px 0;
+    background-color:rgba(216, 230, 216, 0.905) ;
+}
+
+.input button{
+    background-color: rgb(157, 181, 157);
+    font-weight: 575;
+    color: white;
+    border-radius: 0.3;
+    border-color: rgb(4, 4, 4);
+    font-size: 15;
+}
+
+.input button:hover {
+    opacity: 0.5;
+}
+  
+.title {
+    border-bottom: 1px solid darkgray;
+    margin-bottom: 5px;
+    font-size: 40;
+    font-weight: bold;
+    color: white;
+  }
+  
+.container {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
+.item{
+    width:100%;
+}
+
+.top {
+    
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    padding-top: 9%;
+    
+   
+}
+
+#info {
+    display: none;
+    color:white;
+    text-align: center;
+    margin: auto;
+    width:40%;
+    padding: 10px;
+    align-content: center;
+    
+
+}
+.titleTable {
+    background-color:rgb(133, 152, 133) ;
+    font-weight: bold;
+    font-size: 20px;
+    color:rgb(255, 255, 255) ;
+}
+#info td {
+    background-color: rgb(184, 198, 184);
+    font-weight: 600;
+    font-weight: bolder;
+    color:rgb(9, 9, 9);
+    text-align: left;
+    width: 25%;
+    padding-left: 20px;
+    opacity: 0.7;
+}
+
+#info td:hover{
+    opacity: 1;
+
+}
+
+tr:nth-child(even) {
+    background-color: rgb(184, 198, 184);
+  }
+
+#current {
+    color: rgb(46, 102, 46);
+    font-size: large;
+}
+#temp {
+    color: rgb(46, 102, 46);
+    font-size: large;
+}
+
+img {
+    width:80%;
+    border-left: 5px solid rgb(133, 152, 133) ;
+    border-right: 5px solid rgb(133, 152, 133) ;
+}
+#currentImg {
+    padding-bottom: 12px;
+}
+
+#chartd {
+    display: none;
+    color:white;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    align-content: center;
+}
+
+#myChart {
+    color:white;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    align-content: center;
+    background-color: rgb(184, 198, 184);
+    opacity: 0.5;
+    transition: transform .2s; /* Animation */
+    
+}
+
+#myChart:hover {
+    background-color:rgb(231, 240, 231);
+    opacity: 1;
+    
+    transform: scale(1.25); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      
+}
+
+.chartH {
+    background-color:rgb(133, 152, 133) ;
+    font-weight: bold;
+    color:rgb(255, 255, 255) ;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    align-content: center;
+    
+  
+}
+
+  
+.checkContainer {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    align-content: center;   
+}
+
+h1 {
+    background-color:rgb(133, 152, 133);
+    opacity: 0.7;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    align-content: center; 
+}
+
+#weatherD table th{
+    color: aliceblue;
+    font-weight: bolder;
+    border-bottom: 3px solid rgb(239, 245, 239) ;
+    width:100px;
+}
+
+#weatherD tr{
+    background-color:rgba(133, 152, 133,0)
+}
+
+#weatherD table {
+    text-align: center;
+    margin: auto;
+    align-content: center; 
+    width:70%;
+
+    
+}
+
+#zImg {
+    width: 50px;
+    height:auto;
+    text-align: center;
+    margin: auto;
+    align-content: center; 
+    
+}
+#oImg {
+    width: 50px;
+    height:auto;
+    text-align: center;
+    margin: auto;
+    align-content: center; 
+    
+}
+#twImg {
+    width: 50px;
+    height:auto;
+    text-align: center;
+    margin: auto;
+    align-content: center; 
+    
+}
+#thrImg {
+    width: 50px;
+    height:auto;
+    text-align: center;
+    margin: auto;
+    align-content: center; 
+    
+}
